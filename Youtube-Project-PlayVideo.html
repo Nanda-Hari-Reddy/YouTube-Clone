@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/MDBbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav-container flex-div">
+        <div class="nav-start flex-div">
+            <button class="Threebar"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+            <button class="home"><h5><i class="fa-brands fa-youtube fa-xl" style="color: #f50000;"></i> YouTube</h5></button>
+        </div>
+      <div class="nav-mid flex-div">
+          <div class="nav-search flex-div">
+              <input type="text" placeholder="search" class="input">
+              <button><i class="fa-solid fa-magnifying-glass" style="color: #919191;"></i></button>
+          </div>
+          <button class="nav-voice"><i class="fa-solid fa-microphone" style="color: #007bff;"></i></button>
+      </div>
+      <div class="nav-end flex-div">
+        <button><i class=" glass fa-solid fa-magnifying-glass" style="color: #919191;"></i></button>
+          <button class="nav-live"><i class="fa-solid fa-video" style="color: #ff0000;"></i></button>
+          <button class="nav-subsciption"><i class="fa-brands fa-microsoft" style="color: #6f7276;"></i></button>
+          <button class="nav-notif"><i class="fa-solid fa-bell" style="color: #929090;"></i></button>
+          <button><img src="images/Jack.png" alt="" class="nav-profile"></button>
+      </div>
+    </nav>
+    
+    <div class="sidebar">
+        <div class="shortcut-links">
+              <a href=""><i class="fa-solid fa-house" style="color: #ff0000;"></i><p>Home</p></a>
+              <a href=""><i class="fa-solid fa-film" style="color: #ff0000;"></i><p> Shorts</p></a>
+              <a href=""><i class="fas fa-basket-shopping" style="color: #ff0000;"></i><p>Subsciptions</p></a>
+        </div>
+        <hr>
+        <div class="shortcut-links">
+              <a href=""><i class="fa-solid fa-id-card" style="color: #ff0000;"></i><p>Your Channel</p></a>
+              <a href=""><i class="fa-solid fa-clock-rotate-left" style="color: #ff0000;"></i><p>History</p></a>
+              <a href=""><i class="fas fa-circle-play" style="color: #ff0000;"></i><p>Your Videos</p></a>
+              <a href=""><i class="fa-solid fa-clock" style="color: #ff0000;"></i><p>Watch Later</p></a>
+              <a href=""><i class="fa-solid fa-scissors" style="color: #ff0000;"></i><p>Your Clips</p></a>
+              <a href=""><i class="fas fa-chevron-down" style="color: #ff0000;"></i><p>Show More</p></a><a href=""><i class="fa-solid fa-id-card" style="color: #ff0000;"></i><p>Your Channel</p></a>
+        </div>
+        <hr>
+        <div class="subscibed">
+              <h6 class="sub">Subscriptions<h6>
+              <a href=""><img src="images/Jack.png" alt="" class="image"><p>Jack</p></a>
+              <a href=""><img src="images/gerard.png" alt="" class="image"><p>Winchesters</p></a>
+              <a href=""><img src="images/SpideyVenom.jpg" alt="" class="image"><p>Damon Salvator</p></a>
+              <a href=""><img src="images/Nanda.jpg" alt="" class="image"><p>Klaus MIkelson</p></a>
+              <a href=""><img src="images/simon.png" alt="" class="image"><p>Scott</p></a>
+              <a href=""><img src="images/cameron.png" alt="" class="image"><p>Caroline Forbes</p></a>
+        </div>
+        <hr>
+     </div>
+     <script src="YoutubeScript2.js"></script>
+
+
+                                    <!-- main -->
+
+    <main>
+        <div class="row">
+            <div class="play-container">
+                        <video src="images/video.mp4"  id="play"></video>
+                        <div class="play-details">
+                            <h4 class="play-title">Learn Complete HTML And CSS By Building 5 Real World Website</h1>
+                            <div class="play-subscribe">
+                                    <div class="subscribe-start">
+                                            <a href=""><img src="images/Jack.png" alt="jack"></a>
+                                            <a href=""><div class="play-channel"></a>
+                                                <h6 class="Channels">GreatStack</h6>
+                                                <p class="subs-count">922K subscribers</p>
+                                            <button  class="subscibe">Subscribe</button>
+                                            </div>
+                                    </div>
+                                    <div class="subscibe-end">
+                                            <button class="like"><i class="fa-regular fa-thumbs-up" style="color: #000000;"></i></button>
+                                            <button class="dislike"><i class="fa-regular fa-thumbs-down" style="color: #000000;"></i></button>
+                                            <button class="share"><i class="fa-solid fa-share" style="color: #000000;"></i>Share</button>
+                                    </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="right-sidebar">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

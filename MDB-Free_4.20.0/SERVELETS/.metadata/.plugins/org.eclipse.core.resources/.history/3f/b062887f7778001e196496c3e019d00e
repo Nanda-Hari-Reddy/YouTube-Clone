@@ -1,0 +1,30 @@
+<html>
+<head>
+	<style>
+		*
+		{
+			margin: 0px;
+			box-sizing: border-box;
+			padding: 0px;
+		}
+			div
+			{
+				background-color:grey;
+				margin-bottom: 10px;
+				display: flex;
+				flex-direction:column;
+				place-content:center;
+			}
+	</style>
+<body>
+	<div>
+	<form action="add">
+		Number1: <input type="text" name="one"><br>
+		Number2: <input type="text" name="two"><br>
+		<input type="submit">
+		<input type="text" name="result">
+	</form>
+	</div>
+</body>
+</head>
+</html>

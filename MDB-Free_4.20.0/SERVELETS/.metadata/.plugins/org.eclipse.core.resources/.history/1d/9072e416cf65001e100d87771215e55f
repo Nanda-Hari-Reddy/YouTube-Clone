@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Addition</title>
+</head>
+<body>
+	<form>
+		<input type="text">Number 1</input>
+		<input type="text">Number 2</input>
+		<input type="submit"><button>submit</button></input>
+	</form>
+</body>
+</html>

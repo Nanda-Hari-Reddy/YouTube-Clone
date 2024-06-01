@@ -1,0 +1,10 @@
+<html>
+<body>
+<form action="add">
+	Number1: <input type="text" name="one"><br>
+	Number2: <input type="text" name="two"><br>
+	<input type="submit">
+</form>
+
+</body>
+</html>

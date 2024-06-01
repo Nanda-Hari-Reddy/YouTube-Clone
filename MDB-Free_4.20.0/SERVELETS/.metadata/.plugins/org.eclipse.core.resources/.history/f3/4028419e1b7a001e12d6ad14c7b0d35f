@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MyAccount</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            color: whitesmoke;
+            margin-inline: auto;
+        }
+        body
+        {
+        	background-color:grey;
+            margin-top: 5%;
+        }
+        .container
+        {
+            background-color: black;
+            width: 700px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+        }
+        .container h1
+        {
+            color: orange;
+            text-align: center;
+            margin-bottom: 1rem;
+            
+        }
+        td
+        {
+            padding: 0.5rem;
+        }
+        input
+        {
+            height: 25px;
+        }
+        input,textarea
+        {
+            border-radius: 5px;
+            color:black;
+        }
+        input:hover,textarea:hover
+        {
+            border: 2px solid orange;
+        }
+        .button
+		{
+			background-color: rgb(165, 14, 14);
+			height: 50px;
+			width: 200px;
+			border-radius: 0.5rem;
+		}	
+		.send
+		{
+			display: flex;
+			justify-content: space-around;
+
+			margin-bottom: 1rem;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>STUDENT REGESTRATION FORM</h1>
+		<form action="MyAccount">
+			<table>
+                <tr>
+					<td><label>EMAIL</label></td>
+					<td><input type="EMAIL" name="email" required pattern="[A-Z a-z 0-9]{,}[@gmail][.]com"></td>
+				</tr>
+                <tr>
+					<td><label>PASSWORD</label></td>
+					<td><input type="password" name="password" required"></td>
+				</tr>
+				<tr>
+					<td><label>FIRST NAME</label></td>
+					<td><input type="TEXT" name="first name" required maxlength="30">
+					<td>(max 30 characters a-z and A-Z)</td>
+				</tr>
+				<tr>
+					<td><label>LAST NAME</label></td>
+					<td><input type="TEXT" name="last name" required maxlength="30">
+					<td>(max 30 characters a-z and A-Z)</td>
+				</tr>
+				<tr>
+					<td><label>DATE OF BIRTH</label></td>
+					<td><input type="DATE" name="date" required>
+				</tr>
+				<tr>
+					<td><label>MOBILE NUMBER</label></td>
+					<td><input type="text" name="mobile" required pattern="[6-9][0-9]{9}"></td>
+					<td>(10 digit number)</td>
+				</tr>
+				<tr>
+					<td><label>GENDER</label></td>
+					<td><input type="RADIO" name="gender" required>Male</td><td><input type="RADIO" name="gender" required>Female</td>
+				</tr>
+				<tr>
+					<td><label>ADDRESS</label></td>
+					<td><textarea cols="25" rows="5" name="Address" required></textarea></td>
+				</tr>
+				<tr>
+					<td><label>CITY</label></td>
+					<td><input type="TEXT" name="city" required></td>
+				</tr>
+				<tr>
+					<td><label>PIN CODE</label></td>
+					<td><input type="text" name="pincode" required></td>
+				</tr>
+				<tr>
+					<td><label>STATE</label></td>
+					<td><input type="TEXT" name="state" required></td>
+				</tr>
+			</table>
+            <div class="send">
+                <input type="submit" class="button">
+                <input type="reset" class="button">
+            </div>
+		</form>
+    </div>
+</body>
+</html>

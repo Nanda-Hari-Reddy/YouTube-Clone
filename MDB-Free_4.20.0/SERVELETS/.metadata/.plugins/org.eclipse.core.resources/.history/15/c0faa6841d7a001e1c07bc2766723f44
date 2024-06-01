@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MyAccount</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+        .title
+        {
+            text-align: center;
+            font-family: monospace;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+            margin-inline: auto;
+            background-color: rgb(7, 0, 0);
+            height: auto;
+            width: 500px;
+            border-radius: 20px;
+        }
+        input
+        {
+            margin: 1rem;
+            border-radius: 5px;
+            color: black;
+            height: 25px;
+            width: 250px;
+        }
+        .submit
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #submit
+        {
+            height: 25px;
+            width: 100px;
+            background-color: rgb(74, 210, 0);
+        }
+        #reset
+        {
+            height: 25px;
+            width: 100px;
+            background-color: rgb(207, 3, 3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="LogIn">
+            <div class="title"><h1>MyAccount Login</h1></div>
+            <div>
+            <table>
+                <tr>
+                    <td><h4>Username</h4></td>
+                    <td><input type="text" placeholder="username@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><h4>Password</h4></td>
+                    <td><input type="password" placeholder="********" required pattern="[A-Z a-z 0-9]{,}" ></td>
+                </tr>
+            </table>
+             </div>
+            <div class="submit">
+                <input type="submit" name="submit" id="submit">   
+                <input type="reset" name="reset" id="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

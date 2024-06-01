@@ -1,0 +1,8 @@
+package com.jsp.Basic;
+
+import javax.servlet.http.HttpServlet;
+
+public class AddServelet implements HttpServlet
+{
+	
+}

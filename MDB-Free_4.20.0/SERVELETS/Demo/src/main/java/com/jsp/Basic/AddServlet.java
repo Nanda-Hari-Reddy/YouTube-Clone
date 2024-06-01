@@ -1,0 +1,28 @@
+package com.jsp.Basic;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+@WebServlet("/add")
+public class AddServlet extends HttpServlet
+{
+	
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException 
+	{
+		int i=Integer.parseInt(req.getParameter("one"));
+		int j=Integer.parseInt(req.getParameter("two"));
+		int k=i+j;
+		res.setContentType("text/html");
+		System.out.println("sum = "+k);
+		PrintWriter out = res.getWriter();
+		out.println("<h4>Hello<h4>");
+		out.println("<h1>result: "+k+"</h1>");    
+		
+	} 
+}
